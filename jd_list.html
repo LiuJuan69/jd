@@ -1,0 +1,3067 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>京东列表页</title>
+<script src="jquery-1.8.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jd_list.css">
+</head>
+<body>
+<!-- 导航栏 -->
+<div class="nav bg">
+<div class="top">
+<!-- 送至北京 -->
+	<ul class="left">
+		<li>
+			<div class="dis">
+				<div class="title">送至：北京</div>
+				<div class="ico"><span>◇</span></div>
+				<div class="slid"></div>
+				<div class="dis_none">
+					<ul>
+						<li><a href="" class="dis_a">北京</a></li>
+						<li><a href="jd_detail.html">上海</a></li>
+						<li><a href="jd_detail.html">天津</a></li>
+						<li><a href="jd_detail.html">重庆</a></li>
+						<li><a href="jd_detail.html">河北</a></li>
+						<li><a href="jd_detail.html">山西</a></li>
+						<li><a href="jd_detail.html">河南</a></li>
+						<li><a href="jd_detail.html">辽宁</a></li>
+						<li><a href="jd_detail.html">吉林</a></li>
+						<li><a href="jd_detail.html">黑龙江</a></li>
+						<li><a href="jd_detail.html">宁夏</a></li>
+						<li><a href="jd_detail.html">新疆</a></li>
+						<li><a href="jd_detail.html">澳门</a></li>
+						<li><a href="jd_detail.html">天津</a></li>
+						<li><a href="jd_detail.html">青海</a></li>
+						<li><a href="jd_detail.html">河北</a></li>
+						<li><a href="jd_detail.html">台湾</a></li>
+						<li><a href="jd_detail.html">甘肃</a></li>
+						<li><a href="jd_detail.html">陕西</a></li>
+						<li><a href="jd_detail.html">吉林</a></li>
+						<li><a href="jd_detail.html">西藏</a></li>
+						<li><a href="jd_detail.html">云南</a></li>
+						<li><a href="jd_detail.html">香港</a></li>
+						<li><a href="jd_detail.html">钓鱼岛</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<ul class="right">
+		<li><a href="jd_detail.html">你好，请登录</a></li>
+		<li><a href="" class="ared">免费注册</a></li>
+		<li>|</li>
+		<li><a href="jd_detail.html">我的订单</a></li>
+		<li>|</li>
+		<li class="myjd_list">
+			<div class="myjd">
+				<div class="title"><a href="jd_detail.html">我的京东</a></div><div class="ico">
+					<span>◇</span>
+				</div><div class="slid"></div>
+				<div class="myjd_none">
+					<div class="none_top">
+						<div class="ico_radius">
+							<img src="images/jd_lists/myjd.jpg">
+						</div>
+						<div class="ico_title">
+							<a href="" class="abold"><p>你好，请登录</p></a>
+							<a href="jd_detail.html">优惠券</a> | <a href="jd_detail.html">消息</a>
+						</div>
+					</div>
+					<div class="none_bottom">
+						<div class="div">
+							<ul>	
+								<li><a href="jd_detail.html">待处理订单</a></li>
+								<li><a href="jd_detail.html">咨询回复</a></li>
+								<li><a href="jd_detail.html">降价商品</a></li>
+								<li><a href="jd_detail.html">返修退换货</a></li>
+							</ul>
+						</div>
+						<div class="div">
+							<ul>
+								<li><a href="jd_detail.html">我的关注</a></li>
+								<li><a href="jd_detail.html">我的京豆</a></li>
+								<li><a href="jd_detail.html">我的理财</a></li>
+								<li><a href="jd_detail.html">京东白条</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>|</li>
+		<li><a href="jd_detail.html">京东会员</a></li>
+		<li>|</li>
+		<li><a href="jd_detail.html">企业采购</a></li>
+		<li>|</li>
+		<li class="phone_list">
+			<div class="phonejd">
+				<div class="ico"></div><div class="title">
+					<a href="jd_detail.html">手机京东</a>
+				</div><div class="ico2"><span>◇</span></div><div class="slid"></div>
+				<div class="phonejd_none">
+					<div class="xd"><a href="jd_detail.html"><img src="images/jd_lists/phonejd.png"></a>
+						<a class="jd1 ared" href="" title="京东客户端京东钱包客户端新人专享188元大礼包">新人专享188元大礼包</a>
+						<a class="jd2 ared" href="" title="扫一扫封顶立减999元京东客户端ios版京东客户端android版京东客户端ipad版">扫一扫封顶立减999元</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>|</li>
+		<li class="gzhjd_list">
+			<div class="gzhjd">
+				<div class="title"><a href="" class="black">关注京东</a></div><div class="ico">
+					<span>◇</span>
+				</div>
+				<div class="slid"></div>
+
+				<div class="gzhjd_none">
+					<img src="images/jd_lists/gzjd.jpg">
+				</div>
+			</div>
+		</li>
+		<li>|</li>
+		<li class="service_list">
+			<div class="service">
+				<div class="title"><a href="" class="black">客户服务</a></div><div class="ico">
+					<span>◇</span>
+				</div>
+				<div class="slid"></div>
+				<div class="service_none">
+					<p>客户</p>
+					<a href="jd_detail.html">帮助中心</a>&nbsp;&nbsp;&nbsp;
+					<a href="jd_detail.html">售后服务</a>
+					<a href="jd_detail.html">在线客服</a>&nbsp;&nbsp;&nbsp;
+					<a href="jd_detail.html">意见建议</a>
+					<a href="jd_detail.html">电话客服</a>&nbsp;&nbsp;&nbsp;
+					<a href="jd_detail.html">客服邮箱</a>
+					<div class="border_bottom_dotted"></div>
+					<p>商户</p>
+					<a href="jd_detail.html">京东商学院</a>&nbsp;&nbsp;&nbsp;
+					<a href="jd_detail.html">商家入驻</a>
+				</div>
+			</div>
+		</li>
+		<li>|</li>
+		<li class="navjd_list">
+			<div class="navjd">
+				<div class="title"><a href="" class="black">网站导航</a></div><div class="ico">
+					<span>◇</span>
+				</div>
+				<div class="slid"></div>
+				<div class="navjd_none">
+					<ul>
+						<li>
+							<div class="none border_right_dotted">
+									<h2>特色主题</h2>
+									<ul>
+										<li><a href="jd_detail.html">品牌街</a></li>
+										<li><a href="jd_detail.html">好物100</a></li>
+										<li><a href="jd_detail.html">京东预售</a></li>
+										<li><a href="jd_detail.html">尖er货</a></li>
+										<li><a href="jd_detail.html">京东首发</a></li>						
+										<li><a href="jd_detail.html">今日团购</a></li>
+										<li><a href="jd_detail.html">优惠券</a></li>
+										<li><a href="jd_detail.html">闪购</a></li>
+										<li><a href="jd_detail.html">京东会员</a></li>
+										<li><a href="jd_detail.html">秒杀</a></li>
+									
+										<li><a href="jd_detail.html">定期送</a></li>
+										<li><a href="jd_detail.html">装机大师</a></li>
+										<li><a href="jd_detail.html">新奇特</a></li>
+										<li><a href="jd_detail.html">京东试用</a></li>
+										<li><a href="jd_detail.html">礼品购</a></li>
+									</ul>
+								</div>
+						</li>	
+						<li>
+							<div class="none border_right_dotted">
+								<h2>行业频道</h2>
+								<ul>
+									<li><a href="jd_detail.html">服装城</a></li>
+									<li><a href="jd_detail.html">家用电器</a></li>
+									<li><a href="jd_detail.html">电脑办公</a></li>
+									<li><a href="jd_detail.html">手机</a></li>
+									<li><a href="jd_detail.html">美妆馆</a></li>
+									<li><a href="jd_detail.html">食品</a></li>
+									<li><a href="jd_detail.html">数码</a></li>
+									<li><a href="jd_detail.html">母婴</a></li>
+									<li><a href="jd_detail.html">家装城</a></li>
+									<li><a href="jd_detail.html">运动户外</a></li>
+									<li><a href="jd_detail.html">整车</a></li>
+									<li><a href="jd_detail.html">图书</a></li>
+									<li><a href="jd_detail.html">农资频道</a></li>
+									<li><a href="jd_detail.html">京东智能</a></li>
+									<li><a href="jd_detail.html">玩3C</a></li>					
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="none border_right_dotted">
+								<h2>生活服务</h2>
+								<ul>
+									<li><a href="jd_detail.html">今日团购</a></li>
+									<li><a href="jd_detail.html">优惠券</a></li>
+									<li><a href="jd_detail.html">闪购</a></li>
+									<li><a href="jd_detail.html">京东会员</a></li>
+									<li><a href="jd_detail.html">秒杀</a></li>
+									<li><a href="jd_detail.html">食品</a></li>
+									<li><a href="jd_detail.html">数码</a></li>
+									<li><a href="jd_detail.html">母婴</a></li>
+									<li><a href="jd_detail.html">家装城</a></li>
+									<li><a href="jd_detail.html">运动户外</a></li>
+									<li><a href="jd_detail.html">整车</a></li>
+									<li><a href="jd_detail.html">图书</a></li>
+									<li><a href="jd_detail.html">农资频道</a></li>
+									<li><a href="jd_detail.html">京东智能</a></li>
+									<li><a href="jd_detail.html">玩3C</a></li>					
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="none">
+								<h2>更多精选</h2>
+								<ul>
+									<li><a href="jd_detail.html">服装城</a></li>
+									<li><a href="jd_detail.html">家用电器</a></li>
+									<li><a href="jd_detail.html">电脑办公</a></li>
+									<li><a href="jd_detail.html">手机</a></li>
+									<li><a href="jd_detail.html">美妆馆</a></li>
+									<li><a href="jd_detail.html">食品</a></li>
+									<li><a href="jd_detail.html">数码</a></li>
+									<li><a href="jd_detail.html">母婴</a></li>
+									<li><a href="jd_detail.html">家装城</a></li>
+									<li><a href="jd_detail.html">运动户外</a></li>
+									<li><a href="jd_detail.html">整车</a></li>
+									<li><a href="jd_detail.html">图书</a></li>
+									<li><a href="jd_detail.html">农资频道</a></li>
+									<li><a href="jd_detail.html">京东智能</a></li>
+									<li><a href="jd_detail.html">玩3C</a></li>					
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+</div>
+<!-- JD 搜索  -->
+<div class="logo">
+	<div class="left">
+		<a href="index.html"><img src="images/jd_lists/logo.png"></a>
+	</div>
+	<div class="center">
+		<div class="input"><input type="text" name="search" value="金融"></div><div class="search">
+			<input type="submit" value="搜索">
+		</div>
+		<div class="list">
+			<ul>
+				<li class="ml0"><a class="ared" href="">家居9.9</a></li>
+				<li><a href="jd_detail.html">开学季</a></li>
+				<li><a href="jd_detail.html">农用物资</a></li>
+				<li><a href="jd_detail.html">手机节</a></li>
+				<li><a href="jd_detail.html">1元拿走</a></li>
+				<li><a href="jd_detail.html">周大生</a></li>
+				<li><a href="jd_detail.html">女鞋</a></li>
+				<li><a href="jd_detail.html">0元华为</a></li>
+				<li><a href="jd_detail.html">枣夹核桃</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right">
+		<span class="span"></span>
+		<a href="shoppingCar.html">我的购物车</a>
+		<div class="border">
+			<a href="shoppingCar.html">0</a>
+		</div>
+		<span class="gl">></span>
+		<div class="slid"></div>
+		<div class="right_none">
+			<div class="shopping_left">
+				<img src="images/jd_lists/shopping.png">
+			</div>
+			<div class="shopping_right">
+				<span>购物车中还没有商品，赶紧选购吧!</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 全部商品分类 -->
+<div class="header">
+	<div class="left" onmouseover="xianshi()" onmouseout="yincang()">
+		<a href="jd_detail.html">全部商品分类</a>
+		<div id="left">
+		<ul>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">家用电器</a></div><div class="ico">>
+					</div>
+					
+					<div class="head_none">
+						<div class="nv">
+						<div class="fl">
+							<div class="jdc">
+								<a href="jd_detail.html">家电城 ></a><a href="jd_detail.html">品牌日 ></a>
+								<a href="jd_detail.html">智能生活馆></a><a href="jd_detail.html">京东净化馆></a>
+								<a href="jd_detail.html">京东帮服务店></a><a href="jd_detail.html">家电众筹馆 ></a>
+							</div>	<br>
+												
+							<div class="djd">
+								<ul>
+									<li><a href=""id="ddjd">大家电></a><a href=""id="pcc"> |平板电视</a><a href=""id="pcc"> |空调</a><a href=""id="pcc"> |冰箱</a><a href=""id="pcc"> |洗衣机</a><a href="jd_detail.html">|家庭影院</a><a href=""id="pcc"> |DVD</a><a href=""id="pcc"> |迷你音响</a><a href=""id="pcc"> |冷柜</a></li>
+									<br>
+									<li><a href=""id="ddjd">厨卫大电></a><a href=""id="pcc"> |油烟机</a><a href=""id="pcc"> |燃气灶</a><a href=""id="pcc"> |烟灶套装</a><a href=""id="pcc"> |洗碗机</a><a href=""id="pcc"> |电热水器</a><a href=""id="pcc">|气热水器</a><a href=""id="pcc">|厨电</a></li>
+									<br>
+									<li><a href=""id="ddjd">厨房小电></a><a href=""id="pcc"> |电饭煲</a><a href=""id="pcc"> |微波炉</a><a href=""id="pcc"> |电烤箱</a><a href=""id="pcc"> |电磁炉</a><a href=""id="pcc"> |电压力锅</a><a href=""id="pcc">|咖啡机</a><a href=""id="pcc">|面包机</a><a href=""id="pcc">|酸奶机</a><a href=""id="pcc">|养生壶</a></li>
+									<br>
+									<li><a href=""id="ddjd">生活电器></a><a href=""id="pcc"> |电风扇</a><a href=""id="pcc"> |冷风扇</a><a href=""id="pcc"> |吸尘器</a><a href=""id="pcc"> |净化器</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|熨斗</a><a href=""id="pcc">|取暖电器</a><a href=""id="pcc">|净水机</a><a href=""id="pcc">|饮水机</a></li>
+									<br>
+									<li><a href=""id="ddjd"></a><a href=""id="pcc"> |煮蛋器</a><a href=""id="pcc"> |电水壶</a><a href=""id="pcc"> |电炖锅</a><a href=""id="pcc"> |料理机</a><a href=""id="pcc"> |电热饭盒</a><a href=""id="pcc">|电烧烤炉</a><a href=""id="pcc">|电烤箱</a><a href=""id="pcc">|多用途锅</a></li>
+									<br>
+									<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+									<br>
+									<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+									<br>
+									<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+									<br>
+									<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+								</ul>
+							</div>
+							</div>
+							<div class="jdt">
+								<img src="images/jd_lists/head/17.jpg"height="400px;">
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">手机、数码、京东通信</a></div><div class="ico">></div>
+					
+					<div class="head_none">
+					<div class="nv">
+						<div class="fl">
+						<div class="jdc"><a href="jd_detail.html">玩3C ></a><a href="jd_detail.html">手机频道 ></a><a href="jd_detail.html">网上营业厅></a><a href="jd_detail.html">配件城></a><a href="jd_detail.html">影像Club></a><a href="jd_detail.html">以旧换新 ></a></div>	
+
+						<br>
+						<div class="djd">
+							<ul>
+									<li><a href=""id="ddjd">手机通讯></a><a href=""id="pcc"> |手机</a><a href=""id="pcc"> |对讲机</a><a href=""id="pcc"> |以旧换新</a><a href=""id="pcc"> |手机维修</a></li>
+									<br>
+									<li><a href=""id="ddjd">运营商></a><a href=""id="pcc"> |合约机</a><a href=""id="pcc"> |办套餐</a><a href=""id="pcc"> |选号码</a><a href=""id="pcc"> |装宽带</a><a href=""id="pcc"> |中国移动</a><a href=""id="pcc">|中国联通</a><a href=""id="pcc">|中国电信</a></li>
+									<br>
+									<li><a href=""id="ddjd">手机配件></a><a href=""id="pcc"> |手机电池</a><a href=""id="pcc"> |移动电源</a><a href=""id="pcc"> |蓝牙耳机</a><a href=""id="pcc"> |充电器</a><a href=""id="pcc"> |数据线</a><a href=""id="pcc">|手机耳机</a><a href=""id="pcc">|手机支架</a><a href=""id="pcc">|贴膜</a><a href=""id="pcc">|手机饰品</a></li>
+									<br>
+									<li><a href=""id="ddjd">摄影摄像></a><a href=""id="pcc"> |数码相机</a><a href=""id="pcc"> |单反相机</a><a href=""id="pcc"> |拍立得</a><a href=""id="pcc"> |摄像机</a><a href=""id="pcc"> |镜头</a><a href=""id="pcc">|户外器材</a><a href=""id="pcc">|冲印服务</a><a href=""id="pcc">|数码相框</a></li>
+									
+									
+									<br>
+									<li><a href=""id="ddjd">影音娱乐></a><a href=""id="pcc"> |耳机耳麦</a><a href=""id="pcc"> |音响音箱</a><a href=""id="pcc"> |收音机</a><a href=""id="pcc"> |麦克风</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|MP3</a><a href=""id="pcc">|MP4</a><a href=""id="pcc">|专业音频</a></li>
+									<br>
+									
+									<li><a href=""id="ddjd">电子教育></a><a href=""id="pcc"> |学生平板</a><a href=""id="pcc"> |点读机</a><a href=""id="pcc"> |早教益智</a><a href=""id="pcc"> |录音笔</a><a href=""id="pcc"> |电子书</a><a href=""id="pcc">|电子词典</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|复读机</a></li>
+									<br>
+									<li><a href=""id="ddjd">智能设备</a><a href=""id="pcc"> |智能手环</a><a href=""id="pcc"> |智能眼镜</a><a href=""id="pcc"> |智能配饰</a><a href=""id="pcc"> |无人机</a><a href=""id="pcc"> |健康监测</a><a href=""id="pcc">|其他配件</a></li>
+							</ul>
+							
+						</div>
+						</div>
+						<div class="jdt"><img src="images/jd_lists/head/18.jpg"height="400px;"></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">电脑、办公</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+											<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+											<br>
+											<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+											<br>
+											<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+											<br>
+											<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">家居、家具、家装、厨具</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+											<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+											<br>
+											<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+											<br>
+											<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+											<br>
+											<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">男装、女装、童装、内衣</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+											<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+											<br>
+											<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+											<br>
+											<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+											<br>
+											<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">个护化妆、清洁用品、宠物</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+											<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+											<br>
+											<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+											<br>
+											<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+											<br>
+											<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">鞋靴、箱包、珠宝、奢侈品</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+											<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+											<br>
+											<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+											<br>
+											<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+											<br>
+											<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">运动户外、钟表</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+											<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+											<br>
+											<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+											<br>
+											<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+											<br>
+											<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+											<br>
+											<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+											<br>
+											<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">汽车、汽车用品</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+										<br>
+										<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+										<br>
+										<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+										<br>
+										<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">母婴、玩具乐器</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3C ></a><a href="jd_detail.html">手机频道 ></a>
+									<a href="jd_detail.html">网上营业厅></a><a href="jd_detail.html">配件城></a>
+									<a href="jd_detail.html">影像Club></a><a href="jd_detail.html">以旧换新 ></a>
+								</div>	
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">手机通讯></a><a href=""id="pcc"> |手机</a><a href=""id="pcc"> |对讲机</a><a href=""id="pcc"> |以旧换新</a><a href=""id="pcc"> |手机维修</a></li>
+										<br>
+										<li><a href=""id="ddjd">运营商></a><a href=""id="pcc"> |合约机</a><a href=""id="pcc"> |办套餐</a><a href=""id="pcc"> |选号码</a><a href=""id="pcc"> |装宽带</a><a href=""id="pcc"> |中国移动</a><a href=""id="pcc">|中国联通</a><a href=""id="pcc">|中国电信</a></li>
+										<br>
+										<li><a href=""id="ddjd">手机配件></a><a href=""id="pcc"> |手机电池</a><a href=""id="pcc"> |移动电源</a><a href=""id="pcc"> |蓝牙耳机</a><a href=""id="pcc"> |充电器</a><a href=""id="pcc"> |数据线</a><a href=""id="pcc">|手机耳机</a><a href=""id="pcc">|手机支架</a><a href=""id="pcc">|贴膜</a><a href=""id="pcc">|手机饰品</a></li>
+										<br>
+										<li><a href=""id="ddjd">摄影摄像></a><a href=""id="pcc"> |数码相机</a><a href=""id="pcc"> |单反相机</a><a href=""id="pcc"> |拍立得</a><a href=""id="pcc"> |摄像机</a><a href=""id="pcc"> |镜头</a><a href=""id="pcc">|户外器材</a><a href=""id="pcc">|冲印服务</a><a href=""id="pcc">|数码相框</a></li>
+										
+										
+										<br>
+										<li><a href=""id="ddjd">影音娱乐></a><a href=""id="pcc"> |耳机耳麦</a><a href=""id="pcc"> |音响音箱</a><a href=""id="pcc"> |收音机</a><a href=""id="pcc"> |麦克风</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|MP3</a><a href=""id="pcc">|MP4</a><a href=""id="pcc">|专业音频</a></li>
+										<br>
+										
+										<li><a href=""id="ddjd">电子教育></a><a href=""id="pcc"> |学生平板</a><a href=""id="pcc"> |点读机</a><a href=""id="pcc"> |早教益智</a><a href=""id="pcc"> |录音笔</a><a href=""id="pcc"> |电子书</a><a href=""id="pcc">|电子词典</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|复读机</a></li>
+										<br>
+										<li><a href=""id="ddjd">智能设备</a><a href=""id="pcc"> |智能手环</a><a href=""id="pcc"> |智能眼镜</a><a href=""id="pcc"> |智能配饰</a><a href=""id="pcc"> |无人机</a><a href=""id="pcc"> |健康监测</a><a href=""id="pcc">|其他配件</a></li>
+									</ul>									
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/18.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">食品、酒类、生鲜、特产</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+										<br>
+										<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+										<br>
+										<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+										<br>
+										<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">医药保健</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>									
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+										<br>
+										<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+										<br>
+										<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+										<br>
+										<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">图书、音像、电子书</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3C ></a><a href="jd_detail.html">手机频道 ></a>
+									<a href="jd_detail.html">网上营业厅></a><a href="jd_detail.html">配件城></a>
+									<a href="jd_detail.html">影像Club></a><a href="jd_detail.html">以旧换新 ></a>
+								</div>	
+
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">手机通讯></a><a href=""id="pcc"> |手机</a><a href=""id="pcc"> |对讲机</a><a href=""id="pcc"> |以旧换新</a><a href=""id="pcc"> |手机维修</a></li>
+										<br>
+										<li><a href=""id="ddjd">运营商></a><a href=""id="pcc"> |合约机</a><a href=""id="pcc"> |办套餐</a><a href=""id="pcc"> |选号码</a><a href=""id="pcc"> |装宽带</a><a href=""id="pcc"> |中国移动</a><a href=""id="pcc">|中国联通</a><a href=""id="pcc">|中国电信</a></li>
+										<br>
+										<li><a href=""id="ddjd">手机配件></a><a href=""id="pcc"> |手机电池</a><a href=""id="pcc"> |移动电源</a><a href=""id="pcc"> |蓝牙耳机</a><a href=""id="pcc"> |充电器</a><a href=""id="pcc"> |数据线</a><a href=""id="pcc">|手机耳机</a><a href=""id="pcc">|手机支架</a><a href=""id="pcc">|贴膜</a><a href=""id="pcc">|手机饰品</a></li>
+										<br>
+										<li><a href=""id="ddjd">摄影摄像></a><a href=""id="pcc"> |数码相机</a><a href=""id="pcc"> |单反相机</a><a href=""id="pcc"> |拍立得</a><a href=""id="pcc"> |摄像机</a><a href=""id="pcc"> |镜头</a><a href=""id="pcc">|户外器材</a><a href=""id="pcc">|冲印服务</a><a href=""id="pcc">|数码相框</a></li>
+										
+										
+										<br>
+										<li><a href=""id="ddjd">影音娱乐></a><a href=""id="pcc"> |耳机耳麦</a><a href=""id="pcc"> |音响音箱</a><a href=""id="pcc"> |收音机</a><a href=""id="pcc"> |麦克风</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|MP3</a><a href=""id="pcc">|MP4</a><a href=""id="pcc">|专业音频</a></li>
+										<br>
+										
+										<li><a href=""id="ddjd">电子教育></a><a href=""id="pcc"> |学生平板</a><a href=""id="pcc"> |点读机</a><a href=""id="pcc"> |早教益智</a><a href=""id="pcc"> |录音笔</a><a href=""id="pcc"> |电子书</a><a href=""id="pcc">|电子词典</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|复读机</a></li>
+										<br>
+										<li><a href=""id="ddjd">智能设备</a><a href=""id="pcc"> |智能手环</a><a href=""id="pcc"> |智能眼镜</a><a href=""id="pcc"> |智能配饰</a><a href=""id="pcc"> |无人机</a><a href=""id="pcc"> |健康监测</a><a href=""id="pcc">|其他配件</a></li>
+									</ul>
+									
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/18.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">彩票、旅行、充值、票务</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3c ></a><a href="jd_detail.html">本周热卖 ></a>
+									<a href="jd_detail.html">游戏部落></a><a href="jd_detail.html">GAME+></a>
+									<a href="jd_detail.html">装机大师></a><a href="jd_detail.html">办公生活馆 ></a>
+								</div>	
+								
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">电脑整机></a><a href=""id="pcc"> |笔记本</a><a href=""id="pcc"> |游戏本</a><a href=""id="pcc"> |平板电脑</a><a href=""id="pcc"> |平板电脑配件</a><a href="jd_detail.html">|台式机</a><a href=""id="pcc"> |一体机</a><a href=""id="pcc"> |服务器</a><a href=""id="pcc"> |工作站</a><a href=""id="pcc"> |配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">电脑配件></a><a href=""id="pcc"> |CPU</a><a href=""id="pcc"> |主板</a><a href=""id="pcc"> |显卡</a><a href=""id="pcc"> |硬盘</a><a href=""id="pcc"> |内存</a><a href=""id="pcc">|机箱</a><a href=""id="pcc">|显示器</a></li>
+										<br>
+										<li><a href=""id="ddjd">外设产品></a><a href=""id="pcc"> |鼠标</a><a href=""id="pcc"> |键盘</a><a href=""id="pcc"> |U盘</a><a href=""id="pcc"> |鼠标垫</a><a href=""id="pcc"> |摄像头</a><a href=""id="pcc">|线缆</a><a href=""id="pcc">|手写板</a><a href=""id="pcc">|硬盘盒</a><a href=""id="pcc">|插座</a></li>
+										<br>
+										<li><a href=""id="ddjd">游戏设备></a><a href=""id="pcc"> |游戏机</a><a href=""id="pcc"> |游戏耳机</a><a href=""id="pcc"> |手柄</a><a href=""id="pcc"> |方向盘</a><a href=""id="pcc"> |加湿器</a><a href=""id="pcc">|游戏软件</a><a href=""id="pcc">|游戏周边</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |路由器</a><a href=""id="pcc"> |网卡</a><a href=""id="pcc"> |交换机</a><a href=""id="pcc"> |网络存储</a><a href=""id="pcc"> |4G上网</a><a href=""id="pcc">|网络盒子</a><a href=""id="pcc">|网络配件</a></li>
+										<br>
+										<li><a href=""id="ddjd">个护健康></a><a href=""id="pcc"> |剃须刀</a><a href=""id="pcc"> |口腔护理</a><a href=""id="pcc"> |电吹风</a><a href=""id="pcc"> |美容器</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|足浴盆</a><a href=""id="pcc">|健康秤</a><a href=""id="pcc">|厨房秤</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |按摩器</a><a href=""id="pcc"> |按摩椅</a><a href=""id="pcc"> |血压计</a><a href=""id="pcc"> |血糖仪</a><a href=""id="pcc"> |体温计</a><a href=""id="pcc">|计步器</a></li>
+										<br>
+										<li><a href=""id="ddjd">五金家装></a><a href=""id="pcc"> |电动工具</a><a href=""id="pcc"> |手动工具</a><a href=""id="pcc"> |仪器仪表</a><a href=""id="pcc"> |排气扇</a><a href=""id="pcc"> |洁身器</a><a href=""id="pcc">|水槽</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|门铃</a><a href=""id="pcc">|电器开关</a></li>
+										<br>
+										<li><a href=""id="ddjd"></a><a href=""id="pcc"> |淋浴花洒</a><a href=""id="pcc"> |厨卫五金</a><a href=""id="pcc"> |家具五金</a><a href=""id="pcc"> |插座</a><a href=""id="pcc"> |电工电料</a><a href=""id="pcc">|监控安防</a></li>
+								</ul>
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/19.jpg"height="400px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="head">
+					<div class="title"><a class="title" href="">理财、众筹、白条、保险</a></div><div class="ico">></div>
+					<div class="head_none">
+						<div class="nv">
+							<div class="fl">
+								<div class="jdc">
+									<a href="jd_detail.html">玩3C ></a><a href="jd_detail.html">手机频道 ></a>
+									<a href="jd_detail.html">网上营业厅></a><a href="jd_detail.html">配件城></a>
+									<a href="jd_detail.html">影像Club></a><a href="jd_detail.html">以旧换新 ></a>
+								</div>	
+
+								<br>
+								<div class="djd">
+									<ul>
+										<li><a href=""id="ddjd">手机通讯></a><a href=""id="pcc"> |手机</a><a href=""id="pcc"> |对讲机</a><a href=""id="pcc"> |以旧换新</a><a href=""id="pcc"> |手机维修</a></li>
+										<br>
+										<li><a href=""id="ddjd">运营商></a><a href=""id="pcc"> |合约机</a><a href=""id="pcc"> |办套餐</a><a href=""id="pcc"> |选号码</a><a href=""id="pcc"> |装宽带</a><a href=""id="pcc"> |中国移动</a><a href=""id="pcc">|中国联通</a><a href=""id="pcc">|中国电信</a></li>
+										<br>
+										<li><a href=""id="ddjd">手机配件></a><a href=""id="pcc"> |手机电池</a><a href=""id="pcc"> |移动电源</a><a href=""id="pcc"> |蓝牙耳机</a><a href=""id="pcc"> |充电器</a><a href=""id="pcc"> |数据线</a><a href=""id="pcc">|手机耳机</a><a href=""id="pcc">|手机支架</a><a href=""id="pcc">|贴膜</a><a href=""id="pcc">|手机饰品</a></li>
+										<br>
+										<li><a href=""id="ddjd">摄影摄像></a><a href=""id="pcc"> |数码相机</a><a href=""id="pcc"> |单反相机</a><a href=""id="pcc"> |拍立得</a><a href=""id="pcc"> |摄像机</a><a href=""id="pcc"> |镜头</a><a href=""id="pcc">|户外器材</a><a href=""id="pcc">|冲印服务</a><a href=""id="pcc">|数码相框</a></li>
+										
+										
+										<br>
+										<li><a href=""id="ddjd">影音娱乐></a><a href=""id="pcc"> |耳机耳麦</a><a href=""id="pcc"> |音响音箱</a><a href=""id="pcc"> |收音机</a><a href=""id="pcc"> |麦克风</a><a href=""id="pcc"> |直发器</a><a href=""id="pcc">|理发器</a><a href=""id="pcc">|MP3</a><a href=""id="pcc">|MP4</a><a href=""id="pcc">|专业音频</a></li>
+										<br>
+										
+										<li><a href=""id="ddjd">电子教育></a><a href=""id="pcc"> |学生平板</a><a href=""id="pcc"> |点读机</a><a href=""id="pcc"> |早教益智</a><a href=""id="pcc"> |录音笔</a><a href=""id="pcc"> |电子书</a><a href=""id="pcc">|电子词典</a><a href=""id="pcc">|水龙头</a><a href=""id="pcc">|复读机</a></li>
+										<br>
+										<li><a href=""id="ddjd">智能设备</a><a href=""id="pcc"> |智能手环</a><a href=""id="pcc"> |智能眼镜</a><a href=""id="pcc"> |智能配饰</a><a href=""id="pcc"> |无人机</a><a href=""id="pcc"> |健康监测</a><a href=""id="pcc">|其他配件</a></li>
+									</ul>
+									
+								</div>
+							</div>
+							<div class="jdt"><img src="images/jd_lists/head/18.jpg"height="400px;"></div>
+						</div>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+	</div>
+	<div class="center">
+		<ul>
+			<li><a href="jd_detail.html">服装城</a></li>
+			<li><a href="jd_detail.html">美妆馆</a></li>
+			<li><a href="jd_detail.html">京东超市</a></li>
+			<li><a href="jd_detail.html">生鲜</a></li>
+			<li><a href="jd_detail.html">全球购</a></li>
+			<li><a href="jd_detail.html">闪购</a></li>
+			<li><a href="jd_detail.html">团购</a></li>
+			<li><a href="jd_detail.html">拍卖</a></li>
+			<li><a href="jd_detail.html">金融</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<img src="images/jd_lists/go.jpg">
+	</div>
+</div>
+<div class="redborder"></div>
+
+
+
+<div class="emp" id="emp">
+<!-- 顶部灰色横条 -->
+<div class="listTop">
+	<div class="listLeft">
+		<div class="left_ico">热卖推荐</div>
+		<ul>
+			<li>
+				<div class="img"><a href="jd_detail.html"><img src="images/jd_lists/jd_list/top1.jpg"></a></div>
+				<div class="text">
+					<a href="" ><p class="listDesc">大屏飞匣 i5 2G独显 app抢购中！</p></a>
+					<p class="listPrice">￥3299.00</p>
+					<a href="jd_detail.html"><p class="listBtn">立即抢购</p></a>
+				</div>
+			</li>
+			<li>
+				<div class="img"><a href="jd_detail.html"><img src="images/jd_lists/jd_list/top2.jpg"></a></div>
+				<div class="text">
+					<a href="" ><p class="listDesc">顽石四代 性价比i7笔记本</p></a>
+					<p class="listPrice">￥3299.00</p>
+					<a href="jd_detail.html"><p class="listBtn">立即抢购</p></a>
+				</div>
+			</li>
+			<li>
+				<div class="img"><a href="jd_detail.html"><img src="images/jd_lists/jd_list/top3.jpg"></a></div>
+				<div class="text">
+					<a href="" ><p class="listDesc">大屏飞匣 i5 2G独显 app抢购中！</p></a>
+					<p class="listPrice">￥3589.00</p>
+					<a href="jd_detail.html"><p class="listBtn">立即抢购</p></a>
+				</div>
+			</li>
+		</ul>
+		<div class="right_ico">促销活动</div>
+	</div>
+	<div class="listRight">
+		<ul>
+			<li>· <a href="" title="微星领券减三百">微星领券减三百</a></li>
+			<li>· <a href="" title="得力办公，下单立减1000元！">得力办公，下单立减1000...</a></li>
+			<li>· <a href="" title="未来人类S5让你在校玩得跟家里一样">未来人类S5让你在校玩得...</a></li>
+			<li>· <a href="" title="酷比魔方上新品，好礼送不停">酷比魔方上新品，好礼...</a></li>
+			<li>· <a href="" title="华硕飞马10平板电脑上市！">华硕飞马10平板电脑上市！</a></li>
+		</ul>
+	</div>
+</div>
+<!-- 电脑办公，背景图片，品牌 收缩部分 -->
+<div class="listCon">
+	<div class="listTitles">
+		<div><p class="listTitle">电脑、办公  &gt;</p></div>
+		<div class="show">
+			<div class="show_title">
+				<a href="jd_detail.html">电脑整机</a>
+				<div class="bg_ico"></div>
+			</div>
+			<div class="gy">></div>
+			<div class="line_none"></div>
+			<div class="show_none">
+				<ul>
+					<li class="first"><a href="jd_detail.html">电脑整机</a></li>
+					<li><a href="jd_detail.html">电脑配件</a></li>
+					<li><a href="jd_detail.html">外设产品</a></li>
+					<li><a href="jd_detail.html">游戏设备</a></li>
+					<li><a href="jd_detail.html">网络产品</a></li>
+					<li class="first"><a href="jd_detail.html">办公设备</a></li>
+					<li><a href="jd_detail.html">文具/耗材</a></li>
+					<li><a href="jd_detail.html">服务产品</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="show">
+			<div class="show_title">
+				<a href="jd_detail.html">笔记本</a>
+				<div class="bg_ico"></div>
+			</div>
+			<div class="gy">></div>
+			<div class="line_none"></div>
+			<div class="show_none">
+				<ul>    
+					<li class="first"><a href="jd_detail.html">笔记本</a></li>
+					<li><a href="jd_detail.html">超极本</a></li>
+					<li><a href="jd_detail.html">游戏本</a></li>
+					<li><a href="jd_detail.html">平板电脑</a></li>
+					<li><a href="jd_detail.html">平板电脑配件</a></li>
+					<li class="first"><a href="jd_detail.html">台式机</a></li>
+					<li><a href="jd_detail.html">服务器/工作站</a></li>
+					<li><a href="jd_detail.html"> 笔记本配件</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="listP">
+		<span class="pred">笔记本</span>
+		<span class="pblack">商品筛选</span>
+		<span class="psmall">共15443个商品</span>
+	</div>
+	<div class="listImg">
+		<div class="guide_title">
+			<p>笔记本购买指南</p>
+			<div></div>
+		</div>
+		<div class="i_de">如果您想购买笔记本，但又对笔记本不太了解，请告诉我们您使用笔记本的目的，我们会为您选出合适的产品。</div>
+		<div>我买笔记本是为了：</div>
+		<ul>
+			<li>
+				<div class="i_radio"></div>
+				<div class="i_desc"><a href="jd_detail.html">基础应用</a></div>
+				<div class="none">				
+					<div class="neirong">我们会为您选出合适的产品</div>
+					<div class="sjx"></div>
+				</div>
+			</li>
+			<li>
+				<div class="i_radio"></div>
+				<div class="i_desc"><a href="jd_detail.html">高效办公</a></div>
+				<div class="none">				
+					<div class="neirong">我们会为您选出合适的产品</div>
+					<div class="sjx"></div>
+				</div>
+			</li>
+			<li>
+				<div class="i_radio"></div>
+				<div class="i_desc"><a href="jd_detail.html">轻薄便携</a></div>
+				<div class="none">				
+					<div class="neirong">我们会为您选出合适的产品</div>
+					<div class="sjx"></div>
+				</div>
+			</li>
+			<li>
+				<div class="i_radio"></div>
+				<div class="i_desc"><a href="jd_detail.html">玩游戏</a></div>
+				<div class="none">				
+					<div class="neirong">我们会为您选出合适的产品</div>
+					<div class="sjx"></div>
+				</div>
+			</li>
+			<li>
+				<div class="i_radio"></div>
+				<div class="i_desc"><a href="jd_detail.html">设计相关</a></div>
+				<div class="none">				
+					<div class="neirong">我们会为您选出合适的产品</div>
+					<div class="sjx"></div>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+	<div class="listBank">
+		<div class="listBanks">
+			<div class="bank_title">品牌：</div>
+			<div class="zimu">
+				<span class="ared border-red">所有品牌</span>
+				<span>ABCDEFGHIGKLMNOPQ</span>
+			</div>
+			<div class="ul">
+				<ul class="first">
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico1.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico5.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico5.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li class="last">
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico1.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="second">
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico5.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico6.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico6.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li class="last">
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico1.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="first">
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico1.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico5.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico5.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li class="last">
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico1.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="second">
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico5.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico6.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico6.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico4.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+					<li>
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico3.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">ThinkPad</a></div>
+						</a>
+					</li>
+					<li class="last">
+						<a href="jd_detail.html">
+						<img src="images/jd_lists/jd_list/ico1.jpg">
+						<div class="bank_desc"><a href="jd_detail.html">联想（Lenovo）</a></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="more" id="fenleiMore">
+				<div class="more1">更多</div>
+				<div class="i_add"></div>
+			</div>
+			<div class="check">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>
+		</div>
+	</div>
+	<div id="shenzhan">
+		<div class="listPrice">
+			<span class="first">价格：</span>
+			<span>
+			<a class="first" href="">0-2399</a>
+			<a href="jd_detail.html">2400-3499</a>
+			<a href="jd_detail.html">3500-3899</a>
+			<a href="jd_detail.html">2400-3499</a>
+			<a href="jd_detail.html">3500-3899</a>
+			<a href="jd_detail.html">2400-3499</a>
+			<a href="jd_detail.html">7800以上</a>
+			<input type="text" name="sprice" value="">
+			<span>-</span>
+			<input type="text" name="bprice" value="">
+			<button>确定</button>
+			</span>
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice">
+			<span class="first">处理器：</span>
+			<span>
+			<a class="first" href="">Intel CoreM</a>
+			<a href="jd_detail.html">Intel i3</a>
+			<a href="jd_detail.html">Intel i5低功耗版</a>
+			<a href="jd_detail.html">Intel i5标准电压版</a>
+			<a href="jd_detail.html">Intel i7低功耗版</a>
+			<a href="jd_detail.html">Intel i7标准电压版</a>
+			<a href="jd_detail.html">Intel 其他</a>
+			<a href="jd_detail.html">AMD系列</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice listPrice1">
+			<span class="first">分类：</span>
+			<span>
+			<a class="first" href="">游戏本</a>
+			<a href="jd_detail.html">超薄本</a>
+			<a href="jd_detail.html">二合一笔记本</a>
+			<a href="jd_detail.html">常规笔记本</a>
+			<a href="jd_detail.html">加固笔记本</a>
+			</span>		
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+		<div class="listPrice">
+			<span class="first">屏幕尺寸：</span>
+			<span>
+			<a class="first" href="">11.6英寸</a>
+			<a href="jd_detail.html">12.5英寸</a>
+			<a href="jd_detail.html">13.3英寸</a>
+			<a href="jd_detail.html">14.0英寸</a>
+			<a href="jd_detail.html">15.6英寸</a>
+			<a href="jd_detail.html">17.3英寸</a>
+			<a href="jd_detail.html">18.4英寸</a>
+			<a href="jd_detail.html">其他</a>
+			</span>
+			<div class="check check1">			
+				<div class="i_add"></div>
+				<div class="more1">多选</div>
+			</div>		
+		</div>
+	</div>
+  	<div class="s_more"  id="anniu">
+		<a id="anniua">内存容量、硬盘容量、分辨率等</a>
+		<span class="i_more"></span>
+		<div class="i_line"></div>
+		<div class="w_line"></div>
+	</div>
+</div>
+</div>
+<!-- 商品列表部分 -->
+<div class="listMain">
+	<div class="mainLeft">
+		<div class="mainTop mainTop1">
+			<span class="fontl">商品精选</span>
+			<span class="fontr">广告</span>
+			<div class="clear"></div>
+				<ul class="top">
+					<li class="first">
+						<img src="images/jd_lists/jd_list/list1.jpg">
+						<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list2.jpg">
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list3.jpg">
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list4.jpg">
+						<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list1.jpg">
+						<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list2.jpg">
+						<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list3.jpg">
+						<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list5.jpg">
+						<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list5.jpg">
+						<a href="jd_detail.html"><p class="desc">惠普（HP）EliteBook 840 G3 W8G54PP 14英寸商务超薄笔记本电脑</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list3.jpg">
+						<a href="jd_detail.html"><p class="desc">惠普（HP）EliteBook 840 G3 W8G54PP 14英寸商务超薄笔记本电脑</p></a>
+						<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+						<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+					</li>
+				</ul>
+		</div>
+		<div class="mainTop">
+			<span class="fontl">达人选购</span>
+			<div class="clear"></div>
+				<ul class="top">
+					<li class="first">
+						<img src="images/jd_lists/jd_list/list1.jpg">	
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS_5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list2.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list3.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list4.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list1.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list2.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list3.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list5.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list5.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+					<li>
+						<img src="images/jd_lists/jd_list/list3.jpg">
+						<p class="price1">￥4999.00</p>
+						<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+					</li>
+				</ul>
+		</div>
+		<div class="mainTop3">
+			<span class="fontl">商品精选</span>
+			<span class="fontr">广告</span>
+			<div class="clear"></div>
+			<ul class="top">
+				<li class="first">
+					<img src="images/jd_lists/jd_list/list10.jpg">
+				</li>
+				<li class="first">
+					<img src="images/jd_lists/jd_list/list11.jpg">
+				</li>
+			</ul>
+		</div>
+	</div>
+			
+	<div class="mainRight">
+	<!-- 第一行 -->
+		<div class="rowsLine">
+			<ul>
+				<li class="first"><a href="" class="first">销量</a><div class="line"></div></li>
+				<li><a href="jd_detail.html">价格</a><div class="line"></div></li>
+				<li><a href="jd_detail.html">评论数</a><div class="line"></div></li>
+				<li class="last"><a href="jd_detail.html">上架时间</a><div class="line"></div></li>
+			</ul>			
+			<div class="rows_ico">
+				<div class="left_ico"> &lt; </div>
+				<div class="right_ico"> &gt; </div>
+			</div>
+			<span class="e">
+				<span class="ared">1</span>/547
+			</span>
+		</div>
+	<!-- 第二行 -->
+		<div class="secondLine">
+			<span class="name">收货地</span>
+			<div class="add">
+				<div class="con">北京海淀区三环以内</div>
+				<div class="icon"></div>
+				<div class="addNone">
+					<div class="tou">
+						<ul>
+							<li class="li" style="display:block">
+								<div class="addwenzi">北京</div>
+								<div class="addico"></div>
+								<div class="yellowL"></div>	
+								<div class="y0 borderYL"></div>
+							</li>
+							<li class="li">
+								<div class="addwenzi">请选择</div>
+								<div class="addico"></div>
+								<div class="y1"></div>
+							</li class="li">
+							<li class="li">
+								<div class="addwenzi">请选择</div>
+								<div class="addico"></div>
+								<div class="y2"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="addxq">
+						<div class="xcAdd">
+							<ul class="uladd">
+								<li id="dizhi0"><a href="jd_detail.html">北京</a></li>
+								<li id="dizhi1"><a href="jd_detail.html">上海</a></li>
+								<li id="dizhi2"><a href="jd_detail.html">天津</a></li>
+								<li><a href="jd_detail.html">重庆</a></li>
+								<li><a href="jd_detail.html">河北</a></li>
+								<li><a href="jd_detail.html">山西</a></li>
+								<li><a href="jd_detail.html">河南</a></li>
+								<li><a href="jd_detail.html">辽宁</a></li>
+								<li><a href="jd_detail.html">吉林</a></li>
+								<li><a href="jd_detail.html">黑龙江</a></li>
+								<li><a href="jd_detail.html">宁夏</a></li>
+								<li><a href="jd_detail.html">新疆</a></li>
+								<li><a href="jd_detail.html">澳门</a></li>
+								<li><a href="jd_detail.html">天津</a></li>
+								<li><a href="jd_detail.html">青海</a></li>
+								<li><a href="jd_detail.html">河北</a></li>
+								<li><a href="jd_detail.html">台湾</a></li>
+								<li><a href="jd_detail.html">甘肃</a></li>
+								<li><a href="jd_detail.html">陕西</a></li>
+								<li><a href="jd_detail.html">吉林</a></li>
+								<li><a href="jd_detail.html">西藏</a></li>
+								<li><a href="jd_detail.html">云南</a></li>
+								<li><a href="jd_detail.html">香港</a></li>
+								<li><a href="jd_detail.html">钓鱼岛</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="beijing" id="dizhij0">
+						<ul class="uladd">
+							<li id="bjq0"><a href="jd_detail.html">朝阳区</a></li>
+							<li id="bjq1"><a href="jd_detail.html"> 海淀区</a></li>
+							<li id="bjq2"><a href="jd_detail.html">丰台区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">通州区</a></li>
+							<li><a href="jd_detail.html"> 密云区</a></li>
+							<li><a href="jd_detail.html">昌平区</a></li>
+							<li><a href="jd_detail.html">朝阳区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">丰台区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">通州区</a></li>
+							<li><a href="jd_detail.html"> 密云区</a></li>
+							<li><a href="jd_detail.html">昌平区</a></li>
+						</ul>    
+					</div>
+					<div class="beijing" id="dizhij1">
+						<ul class="uladd">
+							<li><a href="jd_detail.html">徐汇区</a></li>
+							<li><a href="jd_detail.html"> 长宁区</a></li>
+							<li><a href="jd_detail.html">静安区</a></li>
+							<li><a href="jd_detail.html"> 虹口区</a></li>
+							<li><a href="jd_detail.html">闸北区</a></li>
+							<li><a href="jd_detail.html"> 密云区</a></li>
+							<li><a href="jd_detail.html">昌平区</a></li>
+							<li><a href="jd_detail.html">朝阳区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">丰台区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">通州区</a></li>
+							<li><a href="jd_detail.html"> 密云区</a></li>
+							<li><a href="jd_detail.html">昌平区</a></li>
+						</ul>
+					</div>    
+					<div class="beijing" id="dizhij2">
+						<ul class="uladd">
+							<li><a href="jd_detail.html">东丽区</a></li>
+							<li><a href="jd_detail.html"> 和平区</a></li>
+							<li><a href="jd_detail.html">河北区</a></li>
+							<li><a href="jd_detail.html"> 河东区</a></li>
+							<li><a href="jd_detail.html">闸北区</a></li>
+							<li><a href="jd_detail.html"> 密云区</a></li>
+							<li><a href="jd_detail.html">宁河县</a></li>
+							<li><a href="jd_detail.html">朝阳区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">丰台区</a></li>
+							<li><a href="jd_detail.html"> 海淀区</a></li>
+							<li><a href="jd_detail.html">通州区</a></li>
+							<li><a href="jd_detail.html"> 密云区</a></li>
+							<li><a href="jd_detail.html">昌平区</a></li>
+						</ul>
+					</div>
+					<div class="bjq" id="dbjq0">
+						<ul class="uladd">
+							<li><a href="jd_detail.html">定福庄</a></li>
+							<li><a href="jd_detail.html">平西府</a></li>
+							<li><a href="jd_detail.html">五环到六环之间</a></li>
+							<li><a href="jd_detail.html">管庄</a></li>
+							<li><a href="jd_detail.html">北苑</a></li>
+							<li><a href="jd_detail.html">四环到五环之间</a></li>
+						</ul>
+					</div>
+					<div class="bjq" id="dbjq1">    
+						<ul class="uladd">
+							<li><a href="jd_detail.html">三环内</a></li>
+							<li><a href="jd_detail.html"> 三环到四环之间</a></li>
+							<li><a href="jd_detail.html">四环到五环之间</a></li>
+							<li><a href="jd_detail.html"> 五环到六环之间</a></li>
+							<li><a href="jd_detail.html">西三旗</a></li>
+							<li><a href="jd_detail.html"> 西二旗</a></li>
+						</ul>
+					</div>
+					<div class="bjq" id="dbjq2">    
+						<ul class="uladd">
+							<li><a href="jd_detail.html">三环内</a></li>
+							<li><a href="jd_detail.html"> 三环到四环之间</a></li>
+							<li><a href="jd_detail.html">四环到五环之间</a></li>
+							<li><a href="jd_detail.html"> 五环到六环之间</a></li>
+							<li><a href="jd_detail.html">西三旗</a></li>
+							<li><a href="jd_detail.html"> 西二旗</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="shopLine"></div>
+			</div>
+			<ul class="fukuan">
+				<li>
+					<div></div>
+					<a href="jd_detail.html">京东配送</a>
+				</li>
+				<li>
+					<div></div>
+					<a href="jd_detail.html">货到付款</a>
+				</li>
+				<li>
+					<div></div>
+					<a href="jd_detail.html">仅显示有货</a>
+				</li>
+			</ul>
+		</div>
+	<!-- 内容	 -->
+		<ul class="content">
+			<!-- 1 -->
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<div class="none">	
+						<div class="sjx"></div>			
+						<div class="neirong">我们会为您选出合适的产品</div>					
+					</div>
+				</div>
+				<div class="rows">
+					<div class="div1" id="duibi">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<div class="none">	
+						<div class="sjx"></div>			
+						<div class="neirong">我们会为您选出合适的产品</div>					
+					</div>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<div class="none">	
+						<div class="sjx"></div>			
+						<div class="neirong">我们会为您选出合适的产品</div>					
+					</div>
+					<span>赠</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<div class="none">	
+						<div class="sjx"></div>			
+						<div class="neirong">我们会为您选出合适的产品</div>					
+					</div>
+					<span>赠</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<!-- 2 -->
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<div class="none">	
+						<div class="sjx"></div>			
+						<div class="neirong">我们会为您选出合适的产品</div>					
+					</div>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<!-- 3 -->
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<span>券</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<!-- 4 -->
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<span>券</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<!-- 5 -->
+			<li class="first first11">
+				<div class="zuhe">
+					<span class="title1" id="tao1">单品</span>
+					<span id="tao">套装两件</span>
+				</div>
+				<img src="images/jd_lists/jd_list/53.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR-2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+					<div class="first12" id="first12">
+					<img src="images/jd_lists/jd_list/54.jpg">
+					<p class="price">¥3999.00</p>
+					<a href="jd_detail.html"><p class="desc1">戴尔(DELL)成就Vostro 14 5480R-3528S </p></a>
+					<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+					<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+					<div class="bg_ico"></div>
+					<div class="rows">
+						<div class="div1">
+							<span></span><a href="jd_detail.html">对比</a>
+							<div class="none"></div>
+						</div>
+						<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+						<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/35.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<span>券</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/33.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/27.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<span>赠</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li class="first">
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/list22.jpg">
+				<div class="goods">北京无货</div>
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico"></div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/47.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<span>券</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/36.jpg">
+				<p class="price">¥5499.00</p>
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣15PR_2648B 游戏笔记</p></a>
+				<a href="jd_detail.html"><p class="desc2">【第七代英特尔处理器新品开始预</p></a>
+				<p class="value">已有<a href="" class="per">5400+</a>人评价</p>
+				<div class="bg_ico">
+					<span>赠</span>
+				</div>
+				<div class="rows">
+					<div class="div1">
+						<span></span><a href="jd_detail.html">对比</a>
+						<div class="none"></div>
+					</div>
+					<div class="div2"><a href="jd_detail.html">关注</a><div class="none"></div></div>
+					<div class="div3"><a href="jd_detail.html">加入购物车</a><div class="none"></div></div>
+				</div>
+			</li>
+		</ul>
+	<!-- 页码 -->
+		<div class="page">
+			<ol>
+				<a href="jd_detail.html"><li class="first"><上一页</li></a>
+				<a href="jd_detail.html"><li class="firstPage">1</li></a>
+				<a href="jd_detail.html"><li>2</li></a>
+				<a href="jd_detail.html"><li>3</li></a>
+				<a href="jd_detail.html"><li  class="morePage">...</li></a>
+				<li>551</li>
+				<li class="morePage"><span>共551页 到第</span></li>
+				<li class="morePage"><input type="text" name="" value="1">页</li>
+				<a href="jd_detail.html"><li>确定</li></a>
+				<a href="jd_detail.html"><li class="last">下一页></li></a>
+			</ol>
+		</div>
+	</div>
+</div>
+<div class="mainTop mainTop2">
+	<span class="fontl">商品精选</span>
+	<div class="clear"></div>
+		<ul class="top">
+			<li>
+				<img src="images/jd_lists/jd_list/98.jpg">
+				<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+				<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+				<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/99.jpg">
+				<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+				<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+				<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/100.jpg">
+				<a href="jd_detail.html"><p class="desc">神舟（HASEE） 优雅XS-5Y10S1 14英寸笔记本电脑</p></a>
+				<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+				<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/101.jpg">
+				<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+				<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+				<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/102.jpg">
+				<a href="jd_detail.html"><p class="desc">360°翻转，i5的高清屏！</p></a>
+				<p class="price">￥4999.00<span class="zpin">赠品</span></p>
+				<p class="value">已有<a href="" class="per">1126</a>人评价</p>
+			</li>
+		</ul>
+</div>
+<div class="bannerBottom">
+	<img src="images/jd_lists/jd_list/113.jpg">
+</div>
+<div class="dbList">
+	<p class="miaoshu">对比栏已满，您可以删除不需要的栏内商品再继续添加哦！</p>
+	<div class="list">
+		<div class="title">
+			<ul>
+				<li class="borgreen">对比栏<div class="xian" style="display:block"></div></li>
+				<li>最近浏览<div class="xian"></div></li>
+			</ul>
+			<span id="yincang">隐藏</span>
+		</div>
+		<ol>
+			<li>
+				<img src="images/jd_lists/jd_list/list21.jpg">
+				<a href="jd_detail.html"><p class="desc1">戴尔(DELL) 游匣<br>15PR-2648B 游戏笔记</p></a>
+				<p class="price ared">¥5499.00</p>
+			</li>
+			<li>
+				<img src="images/jd_lists/jd_list/yc.png">
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+		</ol>
+		<ol></ol>
+		
+	</div>
+</div>
+
+<!-- 底部四张图片 -->
+<div id="banner_footer">
+	<div class="footer_banner">
+		<ul>
+			<li><img src="images/jd_lists/bottom_list1.png"></li>
+			<li><img src="images/jd_lists/bottom_list2.png"></li>
+			<li><img src="images/jd_lists/bottom_list3.png"></li>
+			<li><img src="images/jd_lists/bottom_list4.png"></li>
+		</ul>
+	</div>
+</div>
+<!-- 底部链接 -->
+<div id="footer_list">
+	<dl class="list1">
+		<dt>购物指南</dt>
+		<dd><a href="jd_detail.html">购物流程</a></dd>
+		<dd><a href="jd_detail.html">会员介绍</a></dd>
+		<dd><a href="jd_detail.html">生活旅行/团购</a></dd>
+		<dd><a href="jd_detail.html">常见问题</a></dd>
+		<dd><a href="jd_detail.html">大家电</a></dd>
+		<dd><a href="jd_detail.html">联系客服</a></dd>
+	</dl>
+	<dl class="list2 list1">
+		<dt>配送方式</dt>	
+		<dd><a href="jd_detail.html">上门自提</a></dd>
+		<dd><a href="jd_detail.html">211限时达</a></dd>
+		<dd><a href="jd_detail.html">配送服务查询/团购</a></dd>
+		<dd><a href="jd_detail.html">配送费收取标准</a></dd>
+		<dd><a href="jd_detail.html">海外配送</a></dd>
+	</dl>
+	<dl class="list3 list1">
+		<dt>支付方式</dt>	
+		<dd><a href="jd_detail.html">货到付款</a></dd>
+		<dd><a href="jd_detail.html">在线支付</a></dd>
+		<dd><a href="jd_detail.html">分期付款</a></dd>
+		<dd><a href="jd_detail.html">邮局汇款</a></dd>
+		<dd><a href="jd_detail.html">公司转账</a></dd>
+	</dl>
+	<dl class="list4 list1">
+		<dt>售后服务</dt>		
+		<dd><a href="jd_detail.html">售后政策</a></dd>
+		<dd><a href="jd_detail.html">价格保护</a></dd>
+		<dd><a href="jd_detail.html">退款说明</a></dd>
+		<dd><a href="jd_detail.html">返修/退换货</a></dd>
+		<dd><a href="jd_detail.html">取消订单</a></dd>
+	</dl>
+	<dl class="list5">
+		<dt>特色服务</dt>		
+		<dd><a href="jd_detail.html">夺宝岛</a></dd>
+		<dd><a href="jd_detail.html">DIY装机</a></dd>
+		<dd><a href="jd_detail.html">京东E卡</a></dd>
+		<dd><a href="jd_detail.html">京东通信</a></dd>
+		<dd><a href="jd_detail.html">京东JD+</a></dd>
+	</dl>
+	<div class="list6">
+		<div class="title">京东自营覆盖区县</div>
+		<div class="content">
+			<div class="title1">
+				京东已向全国2654个区县提供自营<br>配送服务，支持货到付款、POS机<br>刷卡和售后上门服务。
+			</div>
+			<div class="ico"><a href="" >查看详情></a></div>
+		</div>
+	</div>
+</div>
+<!--   版权声明 -->
+<div id="anoucement" class="border_top">
+	<div class="top">
+		<ul>
+			<li><a href="jd_detail.html">关于我们</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">联系我们</a></li>
+			<li></li>
+			<li><a href="jd_detail.html">联系客服</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">商家入驻</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">营销中心</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">手机京东</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">友情链接</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">销售联盟</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">京东社区</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">京东公益</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">English Site</a></li>
+			<li>|</li>
+			<li><a href="jd_detail.html">Contact Us</a></li>
+			
+		</ul>
+	</div>
+	<div class="center">
+		 <a href="jd_detail.html">京公网安备 11000002000088号</a>
+		   |  京ICP证070359号  |  
+		 <a href="jd_detail.html">  互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+		   |  新出发京零 字第大120007号<br>
+ 			互联网出版许可证编号新出网证(京)字150号  | 
+ 		<a href="jd_detail.html"> 出版物经营许可证</a>  |  
+		<a href="jd_detail.html">网络文化经营许可证京网文[2014]2148-348号</a>  |  	
+			违法和不良信息举报电话：4006561155<br>
+			Copyright © 2004 - 2016  京东JD.com 版权所有  |  消费者维权热线：4006067733<br>
+			京东旗下网站：京东钱包 
+	</div>
+	<div class="bottom">
+		<a href="jd_detail.html"><img src="images/jd_lists/gongan1.png"></a>
+		<a href="jd_detail.html"><img src="images/jd_lists/gongan2.png"></a>
+		<a href="jd_detail.html"><img src="images/jd_lists/gongan3.png"></a>
+		<a href="jd_detail.html"><img src="images/jd_lists/gongan4.png"></a>
+		<a href="jd_detail.html"><img src="images/jd_lists/gongan5.png"></a>
+		<a href="jd_detail.html"><img src="images/jd_lists/gongan6.png"></a>
+	</div>
+</div>
+
+
+<!-- 右侧固定部分 -->
+<div id="fixed_right">
+	<ul>
+		
+		<li>
+			<div class="play">
+				<a href="" class="play_title title1"></a>
+				<div class="play_none"><a href="jd_detail.html">京东会员</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title2"></div>
+				<div class="play_none"><a href="jd_detail.html">购物车</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title3"></div>
+				<div class="play_none"><a href="jd_detail.html">我的关注</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title4"></div>
+				<div class="play_none"><a href="jd_detail.html">我的足迹</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title5"></div>
+				<div class="play_none"><a href="jd_detail.html">顶部</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title6"></div>
+				<div class="play_none"><a href="jd_detail.html">反馈</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title7"></div>
+				<div class="play_none"><a href="jd_detail.html">反馈</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title8"></div>
+				<div class="play_none"><a href="jd_detail.html">反馈</a></div>
+			</div>
+		</li>
+		<li>
+			<div class="play">
+				<div class="play_title title9"><a href="jd_detail.html">问卷调查</a></div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="js/jd_list.js"></script>
+<script>
+
+</script>
+</body>
+</html>
